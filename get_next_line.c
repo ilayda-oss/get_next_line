@@ -6,13 +6,13 @@
 /*   By: sudeilaydaozkara <sudeilaydaozkara@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 01:25:47 by sudeilaydao       #+#    #+#             */
-/*   Updated: 2024/12/22 19:25:26 by sudeilaydao      ###   ########.fr       */
+/*   Updated: 2024/12/24 17:27:17 by sudeilaydao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*read_line(char *buffer, int fd)
+char	*ft_read_line(char *buffer, int fd)
 {
 	char	*tmp;
 	int		ret;
@@ -40,7 +40,7 @@ char	*read_line(char *buffer, int fd)
 	return (buffer);
 }
 
-char	*get_line(char *buffer)
+char	*ft_get_line(char *buffer)
 {
 	size_t		i;
 	char		*tmp;
@@ -64,7 +64,7 @@ char	*get_line(char *buffer)
 	return (tmp);
 }
 
-char	*get_out_line(char *buffer)
+char	*ft_get_out_line(char *buffer)
 {
 	size_t	i;
 	size_t	j;
@@ -100,10 +100,10 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	buffer = read_line(buffer, fd);
+	buffer = ft_read_line(buffer, fd);
 	if (!buffer)
 		return (NULL);
-	ret = get_line(buffer);
-	buffer = get_out_line(buffer);
+	ret = ft_get_line(buffer);
+	buffer = ft_get_out_line(buffer);
 	return (ret);
 }
