@@ -63,7 +63,7 @@ cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c
 
 ## Forbidden Practices
 - Reading the entire file in one go and processing each line afterward is not allowed.
- -Each call to get_next_line() must read only as much as necessary to return the next line.
+- Each call to get_next_line() must read only as much as necessary to return the next line.
 ## Submission and Peer Evaluation
 - Submit your project to your assigned Git repository.
 - Only the files in the repository will be evaluated.
