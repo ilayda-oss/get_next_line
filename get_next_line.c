@@ -6,7 +6,7 @@
 /*   By: sudeilaydaozkara <sudeilaydaozkara@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 01:25:47 by sudeilaydao       #+#    #+#             */
-/*   Updated: 2024/12/24 17:27:17 by sudeilaydao      ###   ########.fr       */
+/*   Updated: 2025/01/01 14:44:53 by sudeilaydao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,5 @@ char	*get_next_line(int fd)
 		return (NULL);
 	ret = ft_get_line(buffer);
 	buffer = ft_get_out_line(buffer);
-	return (ret);
+	return(ret);
 }
