@@ -6,7 +6,7 @@
 /*   By: sudeilaydaozkara <sudeilaydaozkara@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 18:56:48 by sudeilaydao       #+#    #+#             */
-/*   Updated: 2025/01/01 14:44:50 by sudeilaydao      ###   ########.fr       */
+/*   Updated: 2025/01/01 14:45:48 by sudeilaydao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,5 @@ int	ft_strlen(char *c)
 		return (0);
 	while (c[i])
 		i++;
-	return(i);
+	return (i);
 }

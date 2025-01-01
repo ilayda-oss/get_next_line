@@ -6,7 +6,7 @@
 /*   By: sudeilaydaozkara <sudeilaydaozkara@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 19:10:59 by sudeilaydao       #+#    #+#             */
-/*   Updated: 2025/01/01 14:45:00 by sudeilaydao      ###   ########.fr       */
+/*   Updated: 2025/01/01 14:45:40 by sudeilaydao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@
 int		ft_strlen(char *s);
 char	*ft_strjoin(char *s1, char *s2);
 int		ft_strchr(char *s, char c);
-char*get_next_line(int fd);
+char	*get_next_line(int fd);
 
 #endif
